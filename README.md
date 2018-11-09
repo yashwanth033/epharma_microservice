@@ -2,6 +2,8 @@
 
 In this we are trying to make a e-pharmacy web application with microservice architecture following devOps principes and practices powered with Test Driven Development(TDD) approach.
 
+![project structure](https://github.com/msitdevops/epharma_microservice/blob/develop/image3.png)
+
 # Project Desired State and current Status
 
 Currently this application contains User login features and further in the project we are likely to incorporated features like book Appointment, Drug Finder, Symptom checker etc.
