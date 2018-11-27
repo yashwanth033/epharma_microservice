@@ -1,2 +1,2 @@
 # epharma_users
-making users container for project
+Currently we are working on develop branch only please visit develop branch for more information.
