@@ -8,7 +8,7 @@ In this we are trying to make a e-pharmacy web application with microservice arc
 
 Currently this application contains User login features and further in the project we are likely to incorporated features like book Appointment, Drug Finder, Symptom checker etc.
 
-We have unittests for the login funtion ready up until now and We are currently working on automating the builds with Jenkins CI. 
+We have unittests for the login funtion ready up until now and We are currently working on automating the builds with Jenkins CI.
 
 This Repository contains code only in develop branch as no staging and deployment have taken place.
 
@@ -23,7 +23,7 @@ $ docker-compose -f docker-compose-dev.yml build
 ### to run the containers
 $ docker-compose -f docker-compose-dev.yml up -d
 
-### to recreate the db 
+### to recreate the db
 $ docker-compose -f docker-compose-dev.yml run users python manage.py recreate-db
 
 ### to add some sample data into empty db
@@ -44,6 +44,9 @@ $ docker-compose -f docker-compose-dev.yml run users python manage.py cov
 
 ### to do linting of the project folder
 docker-compose -f docker-compose-dev.yml run users flake8 project
+
+### to do linting of the project folder and logging it
+docker-compose -f docker-compose-dev.yml run users flake8 --max-complexity 12 project --output-file flake8-output.txt || exit 0
 
 ### to run the tests on the client UI
 $ docker-compose -f docker-compose-dev.yml run client npm test
